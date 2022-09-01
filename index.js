@@ -24,7 +24,16 @@ function addCrewMember(e) {
 
 // starting game function after user clicks ready
 function startGame(e) {
+// prevents page reloading by default
   e.preventDefault();
+// for loop goes through the input elements inside the input container
+  for (let i = 0; i < inputContainer.children.length; i++) {
+    console.log(inputContainer.children[i].value);
+    // push each input element's value (name) into the crew array
+    let crewName = inputContainer.children[i].value;
+    crew.push(crewName);
+  }
+  console.log(`Current crew consists of : ${crew}`);
 }
 
 // adding click event to button so input field is added for a new crew member
