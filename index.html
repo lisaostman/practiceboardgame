@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Drink Up, Maties!</title>
     <script defer src="./index.js"></script>
   </head>
   <body>
     <header>
-        <form>
-            <label for="crew">What's tonight's drinking crew?</label>
-            <input type="text" id="crewOne" name="crewOne">
-            <input type="text" id="crewTwo" name="crewTwo">
-            <button>Appoint Another Member</button>
-          </form>
+      <form id="crewForm">
+        <label for="crew">What's tonight's drinking crew?</label>
+        <section id="inputContainer">
+          <input type="text" id="crew1" name="crew1" />
+          <input type="text" id="crew2" name="crew2" />
+        </section>
+        <button id="submitCrew">Appoint Another Member</button>
+        <button id="ready">Set Sail!</button>
+      </form>
     </header>
-    
   </body>
 </html>
