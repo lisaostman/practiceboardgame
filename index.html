@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Drink Up, Maties!</title>
+    <script defer src="./prompts.js"></script>
     <script defer src="./index.js"></script>
   </head>
   <body>
@@ -20,8 +21,10 @@
         <button id="ready">Set Sail!</button>
       </form>
     </header>
-    <main>
-
+    <main id="game">
+      <div id="promptContainer"></div>
+      <button id="nextPrompt">Onwards!</button>
+      <button id="reset">Dock</button>
     </main>
   </body>
 </html>
